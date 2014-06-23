@@ -2,8 +2,10 @@
 #include "CsvReader.h"
 /******************************************************************************/
 
+#include "Types.h"
+#include "Define.h"
 
-namespace MG
+namespace YLH
 {
 
 	//-----------------------------------------------------------------------------
@@ -23,24 +25,12 @@ namespace MG
 		destroy();
 	}
 	//-----------------------------------------------------------------------------
-	// MG_CN_MODIFY
-	MG::Bool CsvReader::create( const std::wstring fileName, IMGExternalPackManager* packManager)
+	Bool CsvReader::create( const std::wstring fileName, IMGExternalPackManager* packManager)
 	{
 		if (create(fileName))
 			return true;
-		else if(packManager)
-		{
-			Char16* buf = NULL;
-			Str fileNametemp;
-			MGStrOp::toString(fileName.c_str(), fileNametemp);
-			packManager->extractPackFile(fileNametemp, buf);
-			if (buf && create(buf))
-				return true;
-			else
-				return false;
-		}
-		else
-			return false;
+
+		return false;
 	}
 	//-----------------------------------------------------------------------------
 	Bool CsvReader::create( const std::wstring fileName )
@@ -78,7 +68,6 @@ namespace MG
 					DYNAMIC_ASSERT(false);
 					Char16 errorStr[512];
 					MGStrOp::sprintf(errorStr,512,L"%s²»ÊÇUnicode",szFileFath.c_str());
-					MessageOut(errorStr);
 					delete[] buf;
 					buf = NULL;
 					return false;

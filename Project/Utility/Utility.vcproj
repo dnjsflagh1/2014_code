@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="./include;./source"
+				AdditionalIncludeDirectories="./include;./source;../Common"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -144,6 +144,30 @@
 	<References>
 	</References>
 	<Files>
+		<Filter
+			Name="Common"
+			>
+			<File
+				RelativePath="..\Common\CommonGameDefine.h"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\Define.h"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\Std.h"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\Types.h"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\VersionSwitch.h"
+				>
+			</File>
+		</Filter>
 		<File
 			RelativePath=".\source\CsvReader.cpp"
 			>
