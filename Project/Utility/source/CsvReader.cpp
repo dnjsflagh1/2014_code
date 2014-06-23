@@ -1,9 +1,11 @@
 /******************************************************************************/
 #include "CsvReader.h"
-/******************************************************************************/
 
 #include "Types.h"
 #include "Define.h"
+/******************************************************************************/
+
+
 
 namespace YLH
 {
@@ -35,7 +37,6 @@ namespace YLH
 	//-----------------------------------------------------------------------------
 	Bool CsvReader::create( const std::wstring fileName )
 	{
-
 		Str16	 szFileFath;
 		Char16   szFileName[256]; 
 		GetModuleFileNameW(NULL,szFileName,256); 

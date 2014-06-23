@@ -2,7 +2,10 @@
 #ifndef _CSV_READER_H_
 #define _CSV_READER_H_
 /******************************************************************************/
-#include "Types.h"
+#include "../Common/Define.h"
+#include <vector>
+#include <map>
+
 
 /******************************************************************************/
 namespace YLH

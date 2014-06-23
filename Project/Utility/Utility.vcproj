@@ -156,10 +156,6 @@
 				>
 			</File>
 			<File
-				RelativePath="..\Common\Std.h"
-				>
-			</File>
-			<File
 				RelativePath="..\Common\Types.h"
 				>
 			</File>
@@ -174,42 +170,6 @@
 		</File>
 		<File
 			RelativePath=".\include\CsvReader.h"
-			>
-		</File>
-		<File
-			RelativePath=".\source\DllLoader.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\include\DllLoader.h"
-			>
-		</File>
-		<File
-			RelativePath=".\source\FileOp.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\include\FileOp.h"
-			>
-		</File>
-		<File
-			RelativePath=".\source\Ini.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\include\Ini.h"
-			>
-		</File>
-		<File
-			RelativePath=".\include\MGFile.h"
-			>
-		</File>
-		<File
-			RelativePath=".\source\XmlHelper.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\include\XmlHelper.h"
 			>
 		</File>
 	</Files>
